@@ -1,0 +1,47 @@
+section#home{
+
+  height: 100vh;
+  p{
+    color:black;
+  }
+
+  .inputName{
+    padding: 10px;
+    font-weight: 300;
+    width: 50vh;
+    letter-spacing: .09em;
+ 
+  }
+
+  .inputMessage{
+    padding: 10px;
+    font-weight: 300;
+    width: 50vh;
+    letter-spacing: .09em;
+    height: 4vh;
+    border-color: #048E7F;
+    font-size: 22px;
+ 
+  }
+  .submit_btn {
+	background-color:#048E7F;
+	border-radius:19px;
+	border:3px solid #048E7F;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:28px;
+	padding:18px 62px;
+	text-decoration:none;
+	text-shadow:0px 2px 8px #2f6627;
+}
+.submit_btn:hover {
+	background-color:#048E7F;
+}
+.submit_btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+}

@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: gotham_bold;
+  src: url(../font/Gotham/Gotham_Bold.otf);
+}
+
+.flex-grow{
+  flex-grow: 1;
+}
+
+body {
+  font-family: gotham_bold;
+  font-size: 22pt;
+
+  display:flex;
+  flex-direction:column;
+  color: #048E7F;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction:column;
+}
+
+.center{
+  justify-content: center;
+  text-align: center;
+}
+
+.padding5{
+  padding: 5vh;
+}
+
+.padding10{
+  padding: 10vh;
+}
+.mgleft35{
+  margin-left: 35vh;
+}
+
+.newMessage { 
+  background: gold;
+  width: 263px; 
+  height: 263px;
+  /*border-radius: 50%;*/
+  display: flex; /* or inline-flex */
+  overflow-wrap:break-word;
+  align-items: center; 
+  font-size: 14pt!important;
+  justify-content: center;
+  background: url(../../assets/img/bubble.png);
+  background-repeat: no-repeat;
+}
+/*Todo reduise size of the bubble 203px*/
+.oldMessage { 
+  background: gold;
+  width: 263px; 
+  height: 263px;
+  /*border-radius: 50%;*/
+  display: flex; /* or inline-flex */
+  align-items: center; 
+  justify-content: center;
+  overflow-wrap:break-word;
+  font-size: 10pt!important;
+  background: url(../../assets/img/bubble.png);
+  background-repeat: no-repeat;
+}
+
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+
+.floatingLR{ 
+  animation-name: floatingLR;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
+}
+
+@keyframes floatingLR {
+
+  0% { transform: translate(0px,  0); }
+  50%  { transform: translate(20px,0); }
+  100%   { transform: translate(-0px, -0); }   
+}
+
+@keyframes floating {
+
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 20px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+
+
+
+

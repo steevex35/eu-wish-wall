@@ -1,0 +1,37 @@
+<template>
+  <require from="./add_messages.scss"></require>
+  <require from="../../components/footer/footer"></require>
+  <require from="../../components/header/header"></require>
+  
+  <section id="add_messages" class="column"> 
+    <header></header>
+  <div class="flex-grow"></div>
+    <div class="column ">
+
+      <div show.bind="displayFrom" class="fadeIn">
+            <div>
+                <h2 class="center">How will you make an impact with Jardiance?</h2>
+                <input type="text" id="message" class="inputMessage" name="message" value.bind="message" maxlength="40" autofocus>
+                <p class="mgleft35" style="color:red ;" if.bind="$message==null">${errorMessage}</p>
+            </div>
+            <div class="center padding5">
+                <button class="submit_btn" click.delegate="sendMessage()">SEND</button>
+            </div>
+      </div>
+
+      <div show.bind="!displayFrom" class="fadeIn">
+        <div>
+          <h2 class="center">Share your thoughts<br> with Jardiance</h2>
+          <div class="center padding5">
+            <button  class="submit_btn" click.delegate="clickStart()">START</button>
+        </div>
+      </div>
+      </div>
+
+     
+    </div>
+    <div class="flex-grow"></div>
+    <footer></footer>
+  </section>
+ 
+</template>

@@ -1,0 +1,21 @@
+<template>
+  <require from="./home.scss"></require>
+  <require from="../../components/footer/footer"></require>
+  <require from="../../components/header/header"></require>
+  
+  <section id="home" class="column"> 
+    <header></header>
+  <div class="flex-grow"></div>
+    <div class="column ">
+            <div>
+                <h2 class="center">Share your thoughts<br> with Jardiance</h2>
+                <div class="center padding5">
+                  <button  class="submit_btn" click.delegate="router.navigateToRoute('add_messages')">START</button>
+              </div>
+            </div>
+    </div>
+    <div class="flex-grow"></div>
+    <footer></footer>
+  </section>
+ 
+</template>

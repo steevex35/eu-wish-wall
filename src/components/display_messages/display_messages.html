@@ -1,0 +1,17 @@
+<template>
+  <require from="./display_messages.scss"></require>
+  <section id="display_messages">
+
+    <div class="wrapper">
+      <div repeat.for="currentMessage of all10Messages">
+      
+        <div class="newMessage floating " if.bind="$index == (all10Messages.length -1)">
+          <p>${currentMessage}</p>
+        </div>
+        <div class="oldMessage floating "if.bind="$index != (all10Messages.length -1)">
+         <p>${currentMessage}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
