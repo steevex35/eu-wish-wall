@@ -11,6 +11,12 @@ export class display_messages{
   
   constructor(private router:Router){
     this.getMessage().then(()=>{this.loadData();});
+
+    setInterval(() => {
+    //this.getMessage().then(()=>{this.loadData();});
+    //console.log('resh List Of messages');
+    window.location.reload();
+    }, 60 * 1000);
   }
 
 
@@ -32,15 +38,12 @@ export class display_messages{
   public loadData() {
     this.allMessages = JSON.parse(localStorage.getItem('messages')) || [];
     this.all10Messages = JSON.parse(localStorage.getItem('10messages')) || [];
-      if (this.allMessages.length > 19){
-        const numberOfLastMessages = (this.allMessages.length % 20)+1;
-        this.all10Messages = this.allMessages.slice((this.allMessages.length-numberOfLastMessages),(this.allMessages.length));
-      }else{
-        this.all10Messages = this.allMessages;
-      }
-      console.log("AllMessages: "+this.allMessages);
-      localStorage.setItem('10messages', JSON.stringify(this.all10Messages));
-      console.log("display message ["+this.all10Messages+"]");
+      
+    this.all10Messages = this.allMessages;
+     
+      //console.log("AllMessages: "+this.allMessages);
+    localStorage.setItem('10messages', JSON.stringify(this.all10Messages));
+      //console.log("display message ["+this.all10Messages+"]");
   }  
   
 }

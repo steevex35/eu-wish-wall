@@ -48,32 +48,26 @@ body {
   margin-left: 35vh;
 }
 
-.newMessage { 
+.bublleMessage { 
   background: gold;
-  width: 263px; 
-  height: 263px;
-  /*border-radius: 50%;*/
+  width: 200px; 
+  height: 200px;
   display: flex; /* or inline-flex */
-  overflow-wrap:break-word;
   align-items: center; 
-  font-size: 14pt!important;
   justify-content: center;
-  background: url(../../assets/img/bubble.png);
+  background: url(../../assets/img/bubble-small.png);
   background-repeat: no-repeat;
+  background-size: auto;
 }
-/*Todo reduise size of the bubble 203px*/
-.oldMessage { 
-  background: gold;
-  width: 263px; 
-  height: 263px;
-  /*border-radius: 50%;*/
-  display: flex; /* or inline-flex */
-  align-items: center; 
-  justify-content: center;
-  overflow-wrap:break-word;
-  font-size: 10pt!important;
-  background: url(../../assets/img/bubble.png);
-  background-repeat: no-repeat;
+
+.bublleMessage p {
+  display: block;
+  font-size: 11pt;
+  text-align: center;
+  width: 180px;
+  word-break: normal;
+  overflow-wrap: break-word;   /* current browsers */
+ 
 }
 
 
