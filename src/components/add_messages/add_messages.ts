@@ -6,7 +6,7 @@ export class AddMessages{
   private message:string;
   private displayFrom:boolean;
   private errorMessage:string;
-  private peer = new Peer("oneTec-wishWall-db-messages-sender-id");
+  //private peer = new Peer("oneTec-wishWall-db-messages-sender-id");
 
 
   constructor(private router:Router){
@@ -22,20 +22,20 @@ export class AddMessages{
    sendMessage(){
     this.errorMessage="";  
     //console.log("debut sendMessage= "+this.message)
-    if(this.message){
-      const conn = this.peer.connect("oneTec-wishWall-db-messages-receiver-id");
-    conn.on("open", () => {
+    //if(this.message){
+    //  const conn = this.peer.connect("oneTec-wishWall-db-messages-receiver-id");
+   // conn.on("open", () => {
       //console.log(this.message)
-      conn.send(this.message);
-      this.message ="";
-      this.displayFrom=false;
+     // conn.send(this.message);
+     // this.message ="";
+     // this.displayFrom=false;
       //console.log(this.displayFrom);
       //conn.close();
-    });
-    }else{
-      this.errorMessage="Please tape something";
+   // });
+   // }else{
+   //   this.errorMessage="Please tape something";
       //console.log(this.message)
-    }
+   // }
   //this.router.navigateToRoute('home');
   }
   

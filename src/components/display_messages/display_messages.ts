@@ -7,19 +7,19 @@ import { Router } from 'aurelia-router';
 export class display_messages{
   private url = "https://wish-ipsw.onetec.eu/api/wish.php"
   private allMessages;
-  private all10Messages;
   
   constructor(private router:Router){
-    this.getMessage().then(()=>{this.loadData();});
-
-    setInterval(() => {
     //this.getMessage().then(()=>{this.loadData();});
-    //console.log('resh List Of messages');
-    window.location.reload();
-    }, 60 * 1000);
+    this.getMessage()
+    this.reloadPage();
   }
 
-
+  public reloadPage(){
+    setInterval(() => {
+      //console.log('reload');
+      window.location.reload();
+      }, 60 * 1000);
+  }
 
   async getMessage() {
     const http = new HttpClient();
@@ -32,20 +32,8 @@ export class display_messages{
     return data
     })
     .catch(error => console.log(error))
-}
-
-
-  public loadData() {
-    this.allMessages = JSON.parse(localStorage.getItem('messages')) || [];
-    this.all10Messages = JSON.parse(localStorage.getItem('10messages')) || [];
-      
-    this.all10Messages = this.allMessages;
-     
-      //console.log("AllMessages: "+this.allMessages);
-    localStorage.setItem('10messages', JSON.stringify(this.all10Messages));
-      //console.log("display message ["+this.all10Messages+"]");
-  }  
-  
+}  
+ 
 }
 
 
