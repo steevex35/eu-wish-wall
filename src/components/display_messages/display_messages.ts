@@ -28,10 +28,13 @@ export class display_messages{
     .then(data => {
     this.allMessages = data;
     localStorage.setItem('messages', JSON.stringify(this.allMessages));
-    console.log(this.allMessages)
+    console.log('Data fetched = '+this.allMessages)
     return data
     })
-    .catch(error => console.log(error))
+    .catch(error => {
+      this.allMessages = JSON.parse(localStorage.getItem('messages')) || [];
+      console.log(error)
+    })
 }  
  
 }

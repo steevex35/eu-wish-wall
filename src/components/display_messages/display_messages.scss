@@ -8,6 +8,7 @@ section#display_messages{
   background: url(../../assets/img/Forground.png);
     background-repeat: no-repeat;
     background-size: auto;
+    
     .wrapper {
       margin: auto;
       padding-top: 5%;
@@ -28,100 +29,128 @@ section#display_messages{
 
     .wrapper > div:nth-child(1){
         position: relative;
+        padding: 2px;
       
         //top: 200px;
     }
 
     .wrapper > div:nth-child(2){
         position: relative;
-        //top: 300px;
+        padding: 2px;
+        top: 150px;
+        left: 50px;
       
     }
 
     .wrapper > div:nth-child(3){
         position: relative;
-        //top: 100px;
+        padding: 2px;
+        left: 75px;
     }
 
     .wrapper > div:nth-child(4){
-      
         position: relative;
-        //top: 600px;
+        padding: 2px;
+        top: 700px;
         //left: -600px;
     }
     .wrapper > div:nth-child(5){
       
         position: relative;
-        //top: 20px;
+        top: 20px;
         //left: 200px;
     }
     .wrapper > div:nth-child(6){
         position: relative;
+        padding: 2px;
         //top: 200px;
-       // left: 105px;
+       left: 105px;
     }
     .wrapper > div:nth-child(7){
         position: relative;
-        //top: 50px;
+        padding: 2px;
+        top: 650px;
         //left: 105px;
     }
     .wrapper > div:nth-child(8){
+      padding: 2px;
         position: relative;
         //top: 450px;
     }
     .wrapper > div:nth-child(9){
         position: relative;
-        //top: 150px;
-        //left: 585px;
+        padding: 2px;
+        right: 40px;
+        top: 100px;
+        
     }
     .wrapper > div:nth-child(10){
         position: relative;
-        //top: 300px;
+        padding: 2px;
+        top: 200px;
         //left: 845px;
     }
     .wrapper > div:nth-child(11){
       position: relative;
-      //top: -280px;
-      //right: 200px;
+      padding: 2px;
+      top: 40px;
+      left: 100px;
   }
   .wrapper > div:nth-child(12){
     position: relative;
-    //top: -280px;
+    padding: 2px;
+    left: 280px;
 }
 .wrapper > div:nth-child(13){
   position: relative;
-  //right: 110px;
+  padding: 2px;
+  top: 250px;
+  right: 80px;
 }
 .wrapper > div:nth-child(14){
   position: relative;
- //top: 400px;
+  padding: 2px;
+  top: 200px;
  //right: 200px;
 }
 
 .wrapper > div:nth-child(15){
   position: relative;
-//top:150px;
- //right: 300px;
+  padding: 2px;
+top:50px;
+ left: 50px;
 }
 .wrapper > div:nth-child(16){
   position: relative;
+  padding: 2px;
+  left: 180px;
 //top:10px;
 }
 
 .wrapper > div:nth-child(17){
   position: relative;
-  //top:240px;
-  //left: 1500px;
+  padding: 2px;
+  top:240px;
+
 }
 .wrapper > div:nth-child(18){
   position: relative;
-  //right: 280px;
+  padding: 20px;
+  top: 150px;
+  left:250px;
 }
 
 .wrapper > div:nth-child(19){
   position: relative;
-  //top: 100px;
-  //right: 50px;
+  padding: 20px;
+  top: 300px;
+  left: 500px;
+}
+.wrapper > div:nth-child(20){
+  position: relative;
+  padding: 20px;
+  top: 100px;
+  left: 850px;
 }
 
   }
