@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "eu-wish-wall ",
+=======
+  "name": "virtual-booth",
+>>>>>>> 318d607578e03bf7dd1385f1bd58861e263254e5
   "type": "project:application",
   "paths": {
     "root": "src",

@@ -1,4 +1,4 @@
-# `eu-wish-wall`
+# `virtual-booth`
 
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
 
@@ -6,12 +6,16 @@ For more information, go to https://aurelia.io/docs/cli/webpack
 
 ## Run dev app
 
+<<<<<<< HEAD
 Run `npm start`, then open  `http://localhost:8080`
 
 display Message: `http://localhost:8080/#/`
 display Message: `http://localhost:8080/#/display`
 save Messages: `http://localhost:8080/#/save`
 
+=======
+Run `npm start`, then open `http://localhost:8080`
+>>>>>>> 318d607578e03bf7dd1385f1bd58861e263254e5
 You can change the standard webpack configurations from CLI easily with something like this: `npm start -- --open --port 8888`. However, it is better to change the respective npm scripts or `webpack.config.js` with these options, as per your need.
 
 To enable Webpack Bundle Analyzer, do `npm run analyze` (production build).
