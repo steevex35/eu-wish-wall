@@ -6,7 +6,7 @@ For more information, go to https://aurelia.io/docs/cli/webpack
 
 ## Run dev app
 
-Run `npm start`, then open `http://localhost:8080`
+Run `npm start`, then open  `http://localhost:8080`
 
 display Message: `http://localhost:8080/#/`
 display Message: `http://localhost:8080/#/display`
