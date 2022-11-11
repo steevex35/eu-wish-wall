@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "eu-wish-wall ",
   "description": "WishWall for EU client",
-=======
-  "name": "virtual-booth",
-  "description": "virtual-booth",
->>>>>>> 318d607578e03bf7dd1385f1bd58861e263254e5
   "version": "0.1.0",
   "repository": {
     "type": "???",
