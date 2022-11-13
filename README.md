@@ -25,3 +25,9 @@ For long time aurelia-cli user, you can still use `au run` with those arguments 
 ## Build for production
 
 Run `npm run build`, or the old way `au build --env prod`.
+
+
+## Run dockefile
+
+Run `docker build -t eu-wish-wall-app:1 .`
+Run `docker run -it --rm -p 8080:8080 eu-wish-wall-app:1`
