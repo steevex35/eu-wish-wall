@@ -18,7 +18,6 @@ body {
 
   display:flex;
   flex-direction:column;
-  color: #048E7F;
 }
 
 .row {
@@ -49,7 +48,6 @@ body {
 }
 
 .bublleMessage { 
-  background: gold;
   width: 200px; 
   height: 200px;
   display: flex; /* or inline-flex */
@@ -79,6 +77,8 @@ body {
   animation-timing-function: ease-in-out;
  
 }
+
+	
 
 
 .floatingLR{ 

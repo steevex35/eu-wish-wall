@@ -2,14 +2,13 @@
   <require from="./display_messages.scss"></require>
   <section id="display_messages">
 
-    <div class="floating">
-    <div class="wrapper floatingLR">
-      <div repeat.for="currentMessage of allMessages">
-        <div class="bublleMessage scale-up-hor-center">
+    <div ref="wrapper" class="wrapper">
+      <div repeat.for="currentMessage of allMessages" class.bind="getRandomClass()">
+        <div ref="bubbleMessages[$index]" class="bublleMessage scale-up-hor-center">
          <p class="fadeIn">${currentMessage}</p>
         </div>
       </div>
     </div>
-  </div>
+  
   </section>
 </template>

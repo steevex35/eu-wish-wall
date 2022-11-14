@@ -19,6 +19,9 @@ section#display_messages{
 
     .fadeIn { animation: fadein 2s; }
 
+
+    
+
    
     /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
@@ -123,7 +126,7 @@ top:50px;
 .wrapper > div:nth-child(16){
   position: relative;
   padding: 2px;
-  left: 180px;
+  left: 100px;
 //top:10px;
 }
 
